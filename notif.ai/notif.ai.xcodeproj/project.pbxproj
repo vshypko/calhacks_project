@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F447FDB4752F790D584CA5A /* Pods_notif_ai.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD038AB8B1EC5783C71687EB /* Pods_notif_ai.framework */; };
 		57198DE2218E44CD001A3DD9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57198DE1218E44CD001A3DD9 /* LoginViewController.swift */; };
 		57198DE4218E4560001A3DD9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57198DE3218E4560001A3DD9 /* MapViewController.swift */; };
 		57198DE6218E456D001A3DD9 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57198DE5218E456D001A3DD9 /* ListViewController.swift */; };
@@ -15,6 +16,9 @@
 		5793457E218E2AA200F3D843 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5793457C218E2AA200F3D843 /* Main.storyboard */; };
 		57934580218E2AA200F3D843 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5793457F218E2AA200F3D843 /* Assets.xcassets */; };
 		57934583218E2AA200F3D843 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57934581218E2AA200F3D843 /* LaunchScreen.storyboard */; };
+		F8252583218E493A00BACEB6 /* main_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F8252582218E493A00BACEB6 /* main_logo.png */; };
+		F8C60878218E56A40072483A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8C60877218E56A40072483A /* GoogleService-Info.plist */; };
+		F8C6087A218E59D10072483A /* SIgnUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C60879218E59D10072483A /* SIgnUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,12 @@
 		5793457F218E2AA200F3D843 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57934582218E2AA200F3D843 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57934584218E2AA200F3D843 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD038AB8B1EC5783C71687EB /* Pods_notif_ai.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_notif_ai.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD92EB9A61ED318587EE11CB /* Pods-notif.ai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notif.ai.release.xcconfig"; path = "Pods/Target Support Files/Pods-notif.ai/Pods-notif.ai.release.xcconfig"; sourceTree = "<group>"; };
+		F8252582218E493A00BACEB6 /* main_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_logo.png; path = Assets.xcassets/main_logo.png; sourceTree = "<group>"; };
+		F8C60877218E56A40072483A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F8C60879218E59D10072483A /* SIgnUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIgnUpViewController.swift; sourceTree = "<group>"; };
+		FC6FB033892A970C161D494F /* Pods-notif.ai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notif.ai.debug.xcconfig"; path = "Pods/Target Support Files/Pods-notif.ai/Pods-notif.ai.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F447FDB4752F790D584CA5A /* Pods_notif_ai.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20D6633988D767808EB21196 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC6FB033892A970C161D494F /* Pods-notif.ai.debug.xcconfig */,
+				CD92EB9A61ED318587EE11CB /* Pods-notif.ai.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3DC7796A7E0391851164B4A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD038AB8B1EC5783C71687EB /* Pods_notif_ai.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5793456C218E2AA200F3D843 = {
 			isa = PBXGroup;
 			children = (
 				57934577218E2AA200F3D843 /* notif.ai */,
 				57934576218E2AA200F3D843 /* Products */,
+				20D6633988D767808EB21196 /* Pods */,
+				3DC7796A7E0391851164B4A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +90,7 @@
 		57934577218E2AA200F3D843 /* notif.ai */ = {
 			isa = PBXGroup;
 			children = (
+				F8C60877218E56A40072483A /* GoogleService-Info.plist */,
 				57934578218E2AA200F3D843 /* AppDelegate.swift */,
 				5793457A218E2AA200F3D843 /* WelcomeViewController.swift */,
 				57198DE1218E44CD001A3DD9 /* LoginViewController.swift */,
@@ -67,8 +98,10 @@
 				57198DE5218E456D001A3DD9 /* ListViewController.swift */,
 				5793457C218E2AA200F3D843 /* Main.storyboard */,
 				5793457F218E2AA200F3D843 /* Assets.xcassets */,
+				F8252582218E493A00BACEB6 /* main_logo.png */,
 				57934581218E2AA200F3D843 /* LaunchScreen.storyboard */,
 				57934584218E2AA200F3D843 /* Info.plist */,
+				F8C60879218E59D10072483A /* SIgnUpViewController.swift */,
 			);
 			path = notif.ai;
 			sourceTree = "<group>";
@@ -80,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57934587218E2AA200F3D843 /* Build configuration list for PBXNativeTarget "notif.ai" */;
 			buildPhases = (
+				E32E887E390D727D1A38DD87 /* [CP] Check Pods Manifest.lock */,
 				57934571218E2AA200F3D843 /* Sources */,
 				57934572218E2AA200F3D843 /* Frameworks */,
 				57934573218E2AA200F3D843 /* Resources */,
+				800E0D3F584E69B1073F7D1C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -105,7 +140,7 @@
 				TargetAttributes = {
 					57934574218E2AA200F3D843 = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -133,12 +168,65 @@
 			buildActionMask = 2147483647;
 			files = (
 				57934583218E2AA200F3D843 /* LaunchScreen.storyboard in Resources */,
+				F8252583218E493A00BACEB6 /* main_logo.png in Resources */,
+				F8C60878218E56A40072483A /* GoogleService-Info.plist in Resources */,
 				57934580218E2AA200F3D843 /* Assets.xcassets in Resources */,
 				5793457E218E2AA200F3D843 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		800E0D3F584E69B1073F7D1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-notif.ai/Pods-notif.ai-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-notif.ai/Pods-notif.ai-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E32E887E390D727D1A38DD87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-notif.ai-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		57934571218E2AA200F3D843 /* Sources */ = {
@@ -147,6 +235,7 @@
 			files = (
 				57198DE2218E44CD001A3DD9 /* LoginViewController.swift in Sources */,
 				5793457B218E2AA200F3D843 /* WelcomeViewController.swift in Sources */,
+				F8C6087A218E59D10072483A /* SIgnUpViewController.swift in Sources */,
 				57934579218E2AA200F3D843 /* AppDelegate.swift in Sources */,
 				57198DE6218E456D001A3DD9 /* ListViewController.swift in Sources */,
 				57198DE4218E4560001A3DD9 /* MapViewController.swift in Sources */,
@@ -284,14 +373,16 @@
 		};
 		57934588218E2AA200F3D843 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC6FB033892A970C161D494F /* Pods-notif.ai.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3ZTVV7YLYP;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = notif.ai/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ai.notif.notif-ai";
+				PRODUCT_BUNDLE_IDENTIFIER = ai.notif.notifai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,14 +390,16 @@
 		};
 		57934589218E2AA200F3D843 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD92EB9A61ED318587EE11CB /* Pods-notif.ai.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3ZTVV7YLYP;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = notif.ai/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ai.notif.notif-ai";
+				PRODUCT_BUNDLE_IDENTIFIER = ai.notif.notifai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

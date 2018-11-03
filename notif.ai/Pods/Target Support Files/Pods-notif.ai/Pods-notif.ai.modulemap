@@ -1,0 +1,6 @@
+framework module Pods_notif_ai {
+  umbrella header "Pods-notif.ai-umbrella.h"
+
+  export *
+  module * { export * }
+}
