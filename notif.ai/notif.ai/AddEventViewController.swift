@@ -49,7 +49,7 @@ class AddEventViewController: UIViewController {
             "description": eventDescription.text,
             "category": eventCategories.allowsMultipleSelection,
             "location": "LOCATION",
-            "time": Date().timeIntervalSince1970.milliseconds
+            "time": ""
         ]) { err in
             if let err = err {
                 print("Error adding document: \(err)")
