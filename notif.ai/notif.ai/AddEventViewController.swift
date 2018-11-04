@@ -34,6 +34,32 @@ class AddEventViewController: UIViewController {
     }
     
     
+    @IBOutlet weak var eventName: UITextField!
+    @IBOutlet weak var eventDescription: UITextView!
+    @IBOutlet weak var eventCategories: UITableView!
+    @IBOutlet weak var eventLocation: MKMapView!
+    
+    
+    @IBAction func createEvent(_ sender: Any) {
+        
+        
+        var ref: DocumentReference? = nil
+        ref = db.collection("events").addDocument(data: [
+            "name": eventName.text ?? "",
+            "description": eventDescription.text,
+            "category": eventCategories.allowsMultipleSelection,
+            "location": "LOCATION",
+            "time": Date().timeIntervalSince1970.milliseconds
+        ]) { err in
+            if let err = err {
+                print("Error adding document: \(err)")
+            } else {
+                print("Document added with ID: \(ref!.documentID)")
+            }
+        }
+    }
+    
+    
 }
 
 extension AddEventViewController : CLLocationManagerDelegate {
