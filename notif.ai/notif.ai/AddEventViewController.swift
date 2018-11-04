@@ -12,7 +12,12 @@ import MapKit
 
 class AddEventViewController: UIViewController {
     let locationManager = CLLocationManager()
-    
+    var previousView : String = ""
+
+    @IBAction func cancel(_ sender: Any) {
+        performSegue(withIdentifier: "unwindFromAddEvents", sender: self)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.delegate = self

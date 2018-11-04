@@ -11,7 +11,9 @@ import Firebase
 
 class MapViewController: UIViewController {
 
-
+    @IBAction func unwindFromAddEvents(segue:UIStoryboardSegue) {
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +25,11 @@ class MapViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destinationVC = segue.destination as? AddEventViewController {
+            destinationVC.previousView = "mapView"
+        }
+    }
+
 
 }
-
-

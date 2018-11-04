@@ -11,6 +11,10 @@ import Firebase
 
 class ListViewController: UIViewController {
 
+    @IBAction func unwindFromAddEvents(segue:UIStoryboardSegue) {
+        
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,7 +24,12 @@ class ListViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destinationVC = segue.destination as? AddEventViewController {
+            destinationVC.previousView = "listView"
+        }
+    }
 
 }
 
