@@ -8,5 +8,6 @@ target 'notif.ai' do
   # Pods for notif.ai
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
 
 end
