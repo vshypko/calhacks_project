@@ -119,7 +119,7 @@
         <!--Map-->
         <scene sceneID="MXC-Ta-CGK">
             <objects>
-                <viewController id="sCv-Eb-hhU" customClass="ListViewController" sceneMemberID="viewController">
+                <viewController id="sCv-Eb-hhU" customClass="ListViewController" customModule="notif_ai" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FSr-aO-H3m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -133,6 +133,10 @@
                                 <rect key="frame" x="310" y="565" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="icons_add.png"/>
+                                <connections>
+                                    <action selector="addEvent:" destination="fNY-cj-4HD" eventType="touchUpInside" id="0Rp-ol-g2d"/>
+                                    <action selector="addEvent:" destination="sCv-Eb-hhU" eventType="touchUpInside" id="d3p-1X-GM8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -141,22 +145,18 @@
                     <tabBarItem key="tabBarItem" title="Map" image="icons_map_30.png" id="26E-Rf-0d7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qSO-l3-Ibc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="fNY-cj-4HD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2836" y="965"/>
         </scene>
         <!--List-->
         <scene sceneID="Pz9-k6-7mQ">
             <objects>
-                <viewController id="FV8-5t-Y1H" customClass="MapViewController" sceneMemberID="viewController">
+                <viewController id="FV8-5t-Y1H" customClass="MapViewController" customModule="notif_ai" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kcw-6J-wKy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i61-HW-gOR">
-                                <rect key="frame" x="0.0" y="76" width="375" height="542"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
                             <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="437-xc-iWI">
                                 <rect key="frame" x="0.0" y="20" width="375" height="56"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -165,7 +165,12 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAd-ov-j8l">
                                 <rect key="frame" x="310" y="565" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <state key="normal" image="icons_add.png"/>
+                                <connections>
+                                    <action selector="addEvent:" destination="Zww-b2-BDk" eventType="touchUpInside" id="3wH-a4-Roc"/>
+                                    <action selector="addEvent:" destination="FV8-5t-Y1H" eventType="touchUpInside" id="mcx-Ho-1TY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -175,6 +180,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ien-UN-ddP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Zww-b2-BDk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2836" y="-98.50074962518741"/>
         </scene>
