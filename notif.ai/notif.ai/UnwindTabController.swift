@@ -1,5 +1,5 @@
 //
-//  MapViewController.swift
+//  UnwindTabController.swift
 //  notif.ai
 //
 //  Created by Yahor Yuzefovich on 11/3/18.
@@ -9,8 +9,11 @@
 import UIKit
 import Firebase
 
-class MapViewController: UIViewController {
-    
+class UnwindTabController: UITabBarController {
+
+    @IBAction func unwindFromAddEvents(segue:UIStoryboardSegue) {
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

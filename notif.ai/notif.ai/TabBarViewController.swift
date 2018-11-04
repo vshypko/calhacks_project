@@ -1,0 +1,45 @@
+//
+//  TabBarViewController.swift
+//  notif.ai
+//
+//  Created by Yahor Yuzefovich on 11/3/18.
+//  Copyright © 2018 notif.ai. All rights reserved.
+//
+
+import UIKit
+
+class MyTabController: UITabBarController, TabController {
+  
+  override var selectedIndex: Int {
+    didSet {
+      print("Switching to index \(selectedIndex)")
+    }
+  }
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    guard let tabs = viewControllers else { return }
+    for aVC in tabs {
+      if let aTab = aVC as? ATabController {
+        aTab.tabDelegate = self
+      }
+    }
+  }
+  
+  ///The `prepare(for:)` method gets called as the Storyboard adds child view controllers to the tab bar controller.
+  ///By implementing this function we can set up the tab bar controller as the `tabDelegate`
+  ///of each child view controller so they are able to ask the tab bar controller to change tabs.
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if let child = segue.destination as? ATabController {
+      child.tabDelegate = self
+    }
+  }
+  
+  @objc func switchTab(to: Tab) {
+    let index = to.rawValue
+    guard let viewControllerCount = viewControllers?.count,
+      index >= 0 && index < viewControllerCount  else { return }
+    selectedIndex = index
+  }
+}

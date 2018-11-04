@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wz6-g5-XDd">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="d47-sm-ayb">
+            <objects>
+                <navigationController id="wz6-g5-XDd" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5bm-AD-kbJ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="r9j-0Z-K9G"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AeD-rD-h96" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1468" y="134"/>
+        </scene>
         <!--Welcome View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -45,6 +61,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="kvj-pn-9SG"/>
                     <connections>
                         <segue destination="SVg-az-tpm" kind="show" identifier="alreadyLoggedIn" id="I02-2X-447"/>
                     </connections>
@@ -119,7 +136,7 @@
         <!--Map-->
         <scene sceneID="MXC-Ta-CGK">
             <objects>
-                <viewController id="sCv-Eb-hhU" customClass="ListViewController" customModule="notif_ai" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sCv-Eb-hhU" customClass="MapViewController" customModule="notif_ai" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FSr-aO-H3m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -154,13 +171,13 @@
         <!--List-->
         <scene sceneID="Pz9-k6-7mQ">
             <objects>
-                <viewController id="FV8-5t-Y1H" customClass="MapViewController" customModule="notif_ai" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FV8-5t-Y1H" customClass="ListViewController" customModule="notif_ai" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kcw-6J-wKy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="437-xc-iWI">
-                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I6a-Sy-Qqf">
@@ -292,10 +309,10 @@
             </objects>
             <point key="canvasLocation" x="3804" y="415.14242878560725"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Unwind Tab Controller-->
         <scene sceneID="hOt-YS-cwY">
             <objects>
-                <tabBarController id="SVg-az-tpm" sceneMemberID="viewController">
+                <tabBarController id="SVg-az-tpm" customClass="UnwindTabController" customModule="notif_ai" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cxY-mF-gvU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

@@ -16,6 +16,7 @@
 		5793457E218E2AA200F3D843 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5793457C218E2AA200F3D843 /* Main.storyboard */; };
 		57934580218E2AA200F3D843 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5793457F218E2AA200F3D843 /* Assets.xcassets */; };
 		57934583218E2AA200F3D843 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57934581218E2AA200F3D843 /* LaunchScreen.storyboard */; };
+		57DD8392218EA0770090311C /* UnwindTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DD8391218EA0770090311C /* UnwindTabController.swift */; };
 		F8252583218E493A00BACEB6 /* main_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F8252582218E493A00BACEB6 /* main_logo.png */; };
 		F8C60878218E56A40072483A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8C60877218E56A40072483A /* GoogleService-Info.plist */; };
 		F8C6087A218E59D10072483A /* SIgnUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C60879218E59D10072483A /* SIgnUpViewController.swift */; };
@@ -36,6 +37,7 @@
 		5793457F218E2AA200F3D843 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57934582218E2AA200F3D843 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57934584218E2AA200F3D843 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57DD8391218EA0770090311C /* UnwindTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnwindTabController.swift; sourceTree = "<group>"; };
 		CD038AB8B1EC5783C71687EB /* Pods_notif_ai.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_notif_ai.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD92EB9A61ED318587EE11CB /* Pods-notif.ai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notif.ai.release.xcconfig"; path = "Pods/Target Support Files/Pods-notif.ai/Pods-notif.ai.release.xcconfig"; sourceTree = "<group>"; };
 		F8252582218E493A00BACEB6 /* main_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_logo.png; path = Assets.xcassets/main_logo.png; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				57934584218E2AA200F3D843 /* Info.plist */,
 				F8C60879218E59D10072483A /* SIgnUpViewController.swift */,
 				F8C60881218E87920072483A /* AddEventViewController.swift */,
+				57DD8391218EA0770090311C /* UnwindTabController.swift */,
 			);
 			path = notif.ai;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				5793457B218E2AA200F3D843 /* WelcomeViewController.swift in Sources */,
 				F8C6087A218E59D10072483A /* SIgnUpViewController.swift in Sources */,
 				57934579218E2AA200F3D843 /* AppDelegate.swift in Sources */,
+				57DD8392218EA0770090311C /* UnwindTabController.swift in Sources */,
 				F8C60882218E87920072483A /* AddEventViewController.swift in Sources */,
 				57198DE6218E456D001A3DD9 /* ListViewController.swift in Sources */,
 				57198DE4218E4560001A3DD9 /* MapViewController.swift in Sources */,
