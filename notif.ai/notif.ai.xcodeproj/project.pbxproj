@@ -22,6 +22,7 @@
 		F8C6087D218E700D0072483A /* icons_map_30.png in Resources */ = {isa = PBXBuildFile; fileRef = F8C6087B218E700D0072483A /* icons_map_30.png */; };
 		F8C6087E218E700D0072483A /* icon_list_30.png in Resources */ = {isa = PBXBuildFile; fileRef = F8C6087C218E700D0072483A /* icon_list_30.png */; };
 		F8C60880218E742F0072483A /* icons_add.png in Resources */ = {isa = PBXBuildFile; fileRef = F8C6087F218E742D0072483A /* icons_add.png */; };
+		F8C60882218E87920072483A /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C60881218E87920072483A /* AddEventViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		F8C6087B218E700D0072483A /* icons_map_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icons_map_30.png; sourceTree = SOURCE_ROOT; };
 		F8C6087C218E700D0072483A /* icon_list_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_list_30.png; sourceTree = SOURCE_ROOT; };
 		F8C6087F218E742D0072483A /* icons_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icons_add.png; sourceTree = SOURCE_ROOT; };
+		F8C60881218E87920072483A /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
 		FC6FB033892A970C161D494F /* Pods-notif.ai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notif.ai.debug.xcconfig"; path = "Pods/Target Support Files/Pods-notif.ai/Pods-notif.ai.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +113,7 @@
 				57934581218E2AA200F3D843 /* LaunchScreen.storyboard */,
 				57934584218E2AA200F3D843 /* Info.plist */,
 				F8C60879218E59D10072483A /* SIgnUpViewController.swift */,
+				F8C60881218E87920072483A /* AddEventViewController.swift */,
 			);
 			path = notif.ai;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				5793457B218E2AA200F3D843 /* WelcomeViewController.swift in Sources */,
 				F8C6087A218E59D10072483A /* SIgnUpViewController.swift in Sources */,
 				57934579218E2AA200F3D843 /* AppDelegate.swift in Sources */,
+				F8C60882218E87920072483A /* AddEventViewController.swift in Sources */,
 				57198DE6218E456D001A3DD9 /* ListViewController.swift in Sources */,
 				57198DE4218E4560001A3DD9 /* MapViewController.swift in Sources */,
 			);
